@@ -27,7 +27,7 @@ def draw_background(screen):
 
 #Function to draw text onto the screen
 def draw_text(text:str,size:int,pos:tuple):
-    font=pygame.font.Font("fonts/THE-MONSTOR.ttf",size) #Sets up font with given size
+    font=pygame.font.Font("fonts/THE-MONSTOR.ttf",size) #Sets up font with given size (font from https://www.dafont.com/the-monstor.font)
     text_surf=font.render(text,False,"white") #Creates surface for text
     text_rect=text_surf.get_rect(center=(pos)) #Sets pos
     screen.blit(text_surf,text_rect)  #Blits on screen
